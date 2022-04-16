@@ -52,7 +52,7 @@ const Blogs = () => {
             There are many services which Firebase provides, Most useful of them
             are:
           </h4>
-          <ul>
+          <ul className="list-disc">
             <li>Cloud Firestore.</li>
             <li>Authentication.</li>
             <li>Hosting.</li>
