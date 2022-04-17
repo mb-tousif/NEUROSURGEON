@@ -4,7 +4,7 @@ const SocialAwareness = () => {
     return (
       <div className="md:grid md:grid-cols-2">
         <iframe
-          className="p-4 mx-auto my-auto"
+          className="p-2 mx-auto my-auto"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/cwwpzT-hiHQ"
@@ -14,7 +14,7 @@ const SocialAwareness = () => {
           allowfullscreen
         ></iframe>
         <iframe
-          className="p-4 mx-auto my-auto"
+          className="p-2 mx-auto my-auto"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/vTSis-F2xBE"
@@ -24,7 +24,7 @@ const SocialAwareness = () => {
           allowfullscreen
         ></iframe>
         <iframe
-          className="p-4 mx-auto my-auto"
+          className="p-2 mx-auto my-auto"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/mXKtCx6lnM4"
@@ -34,7 +34,7 @@ const SocialAwareness = () => {
           allowfullscreen
         ></iframe>
         <iframe
-          className="p-4 mx-auto my-auto"
+          className="p-2 mx-auto my-auto"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/5Qgsu0NpC4M"

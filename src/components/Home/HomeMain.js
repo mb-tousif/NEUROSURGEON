@@ -9,13 +9,13 @@ const HomeMain = () => {
     return (
       <div>
         <Banner />
-        <h2 className='text-3xl m-4'>Doctor Major Practice Areas</h2>
+        <h2 className='md:text-4xl m-4 font-semibold'>Doctor Major Practice Areas</h2>
         <div className="md:grid md:grid-cols-3 md:gap-2">
           {services?.map((service) => (
             <Diseases key={service.id} service={service}></Diseases>
           ))}
         </div>
-        <p className="text-4xl">Doctor's Disease Awareness Programme</p>
+        <p className="md:text-4xl text-slate-800 m-3 font-semibold">&#10003; Disease Awareness Programme</p>
         <SocialAwareness/>
       </div>
     );
