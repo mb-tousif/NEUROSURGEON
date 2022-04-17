@@ -4,7 +4,7 @@ import logo from '../../image/logo.png'
 
 const Header = () => {
     return (
-      <div className='overflow-hidden font-bold bg-slate-500 flex'>
+      <div className='overflow-hidden font-bold bg-slate-600 flex'>
         <div className="md:flex md:justify-center ml-4">
             <img className='mx-auto my-auto w-18 h-8' src={logo} alt="logo" />
             <h1 className='p-3'>NEUROSURGEON</h1>

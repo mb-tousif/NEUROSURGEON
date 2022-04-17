@@ -1,6 +1,7 @@
 import React from 'react';
 import useService from '../../Hooks/useService';
 import Diseases from '../diseases/Diseases';
+import SocialAwareness from '../SocialAwareness/SocialAwareness';
 import Banner from '../topBanner/Banner';
 
 const HomeMain = () => { 
@@ -14,6 +15,8 @@ const HomeMain = () => {
             <Diseases key={service.id} service={service}></Diseases>
           ))}
         </div>
+        <p className="text-4xl">Doctor's Disease Awareness Programme</p>
+        <SocialAwareness/>
       </div>
     );
 };

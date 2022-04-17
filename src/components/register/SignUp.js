@@ -45,7 +45,7 @@ const SignUp = () => {
       <div className="bg-slate-500 w-4/5 mx-auto rounded-xl shadow-xl">
         <img className="mx-auto m-2 p-2 w-1/3" src={logImage} alt="logo" />
         <h1 className="md:text-3xl text-xl font-semibold text-center text-gray-50 m-2">
-          Register Now! <span className="text-red-600">&#9997;</span>
+          Register Now &#9997;
         </h1>
         <form onSubmit={getSignIn}>
           <div className="flex justify-center m-2 text-gray-50">
