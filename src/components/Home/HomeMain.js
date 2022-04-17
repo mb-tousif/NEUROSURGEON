@@ -1,11 +1,13 @@
 import React from 'react';
+// import ServiceMain from '../serviceMain/ServiceMain';
 import Banner from '../topBanner/Banner';
 
-const HomeMain = () => {
+const HomeMain = () => {   
     return (
-        <div>
-            <Banner/>
-        </div>
+      <div>
+        <Banner />
+        {/* <ServiceMain/> */}
+      </div>
     );
 };
 
