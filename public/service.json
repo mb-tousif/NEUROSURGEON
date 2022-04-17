@@ -4,20 +4,20 @@
     "name": "Parkinson's Disease",
     "price": 1000,
     "description": "Parkinson's disease is a brain disorder that leads to shaking, stiffness, and difficulty with walking, balance, and coordination. Parkinson's symptoms usually begin gradually and get worse over time. As the disease progresses, people may have difficulty walking and talking.",
-    "img": "./serviceImage/pd.jpg"
+    "img": "./images/pd.jpg"
   },
   {
     "id": "DBS",
     "name": "Deep Brain Stimulation",
     "price": 1000,
     "description": "Deep brain stimulation involves creating small holes in the skull to implant the electrodes into the brain tissue as well as performing surgery to implant the device that contains the batteries under the skin in the chest. Complications of surgery may include: Misplacement of leads. Bleeding in the brain. Stroke.",
-    "img": "./serviceImage/dbs.jpg"
+    "img": "./images/dbs.jpg"
   },
   {
-    "id": "epipy",
+    "id": "epy",
     "name": "Epilepsy",
     "price": 1000,
     "description": "Epilepsy is a common condition that affects the brain and causes frequent seizures. Seizures are bursts of electrical activity in the brain that temporarily affect how it works. They can cause a wide range of symptoms. Epilepsy can start at any age, but usually starts either in childhood or in people over 60.",
-    "img": "./serviceImage/epilepsy.png"
+    "img": "./images/epilepsy.png"
   }
 ]

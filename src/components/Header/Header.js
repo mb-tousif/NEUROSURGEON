@@ -7,7 +7,7 @@ const Header = () => {
       <div className='overflow-hidden font-bold bg-slate-500 flex'>
         <div className="md:flex md:justify-center ml-4">
             <img className='mx-auto my-auto w-18 h-8' src={logo} alt="logo" />
-            <h1 className='p-3'>NEUROSURGEON Dr. RUMI</h1>
+            <h1 className='p-3'>NEUROSURGEON</h1>
         </div>
         <div className="mx-auto my-auto">
         <Link className='mr-4 p-3' to="/home">Home</Link>
