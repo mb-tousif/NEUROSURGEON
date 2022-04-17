@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logImage from "./image/signUp.png";
+import logo from "./image/google.svg";
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase.init";
 
@@ -84,13 +85,11 @@ const SignUp = () => {
             <button
               onClick={() => signInWithGoogle()}
               className="bg-green-400 hover:bg-green-700 rounded-xl w-2/3 p-2 text-gray-50 text-center"
-            >
-              Log In with Google
+            ><img src={logo} alt="logo" /> Log In with Google
             </button>
           </div>
         </div>
-        <p className="text-center text-gray-50 m-2 p-4">
-          Already Registered? <span>Please Log In</span>
+        <p className="text-center text-gray-50 m-2 p-4">Already Registered? <span> Please Log In</span>
         </p>
       </div>
     </div>

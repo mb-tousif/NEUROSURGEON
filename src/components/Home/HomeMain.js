@@ -15,7 +15,7 @@ const HomeMain = () => {
             <Diseases key={service.id} service={service}></Diseases>
           ))}
         </div>
-        <p className="md:text-4xl text-slate-800 m-3 font-semibold">&#10003; Disease Awareness Programme</p>
+        <p className="md:text-4xl text-slate-800 m-3 font-semibold text-center">&#10003; Disease Awareness Programme</p>
         <SocialAwareness/>
       </div>
     );

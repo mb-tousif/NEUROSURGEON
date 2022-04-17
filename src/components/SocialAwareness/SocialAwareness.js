@@ -5,11 +5,9 @@ import pd3 from './image/pd3.jpg'
 
 const SocialAwareness = () => {
     return (
-      <div className="md:grid md:grid-cols-2">
+      <div className="md:grid md:grid-cols-2 gap-y-4">
         <iframe
-          className="p-2 mx-auto my-auto"
-          width="560"
-          height="315"
+          className="w-4/5 h-80 mx-auto p-2 my-auto"
           src="https://www.youtube.com/embed/cwwpzT-hiHQ"
           title="YouTube video player"
           frameborder="0"
@@ -17,9 +15,7 @@ const SocialAwareness = () => {
           allowfullscreen
         ></iframe>
         <iframe
-          className="p-2 mx-auto my-auto"
-          width="560"
-          height="315"
+          className="w-4/5 h-80 mx-auto p-2 my-auto"
           src="https://www.youtube.com/embed/vTSis-F2xBE"
           title="YouTube video player"
           frameborder="0"
@@ -27,9 +23,7 @@ const SocialAwareness = () => {
           allowfullscreen
         ></iframe>
         <iframe
-          className="p-2 mx-auto my-auto"
-          width="560"
-          height="315"
+          className="w-4/5 h-80 mx-auto p-2 my-auto"
           src="https://www.youtube.com/embed/mXKtCx6lnM4"
           title="YouTube video player"
           frameborder="0"
@@ -37,18 +31,16 @@ const SocialAwareness = () => {
           allowfullscreen
         ></iframe>
         <iframe
-          className="p-2 mx-auto my-auto"
-          width="560"
-          height="315"
+          className="w-4/5 h-80 mx-auto p-2 my-auto"
           src="https://www.youtube.com/embed/5Qgsu0NpC4M"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <img className='m-2 p-2' src={pd1} alt="PD Day" />
-        <img className='m-2 p-2' src={pd2} alt="PD Day" />
-        <img className='m-2 p-2' src={pd3} alt="PD Day" />
+        <img className="m-2 p-2 rounded-2xl" src={pd1} alt="PD Day" />
+        <img className="m-2 p-2 rounded-2xl" src={pd2} alt="PD Day" />
+        <img className="m-2 p-2 rounded-2xl" src={pd3} alt="PD Day" />
       </div>
     );
 };
