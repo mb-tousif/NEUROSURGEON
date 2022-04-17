@@ -1,4 +1,7 @@
 import React from 'react';
+import pd1 from './image/pd1.jpg'
+import pd2 from './image/pd2.jpg'
+import pd3 from './image/pd3.jpg'
 
 const SocialAwareness = () => {
     return (
@@ -43,6 +46,9 @@ const SocialAwareness = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        <img className='m-2 p-2' src={pd1} alt="PD Day" />
+        <img className='m-2 p-2' src={pd2} alt="PD Day" />
+        <img className='m-2 p-2' src={pd3} alt="PD Day" />
       </div>
     );
 };

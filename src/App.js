@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './components/about/About';
 import Blogs from './components/blogs/Blogs';
 import CheckOut from './components/CheckOut/CheckOut';
 import Footer from './components/Footer/Footer';
@@ -24,6 +25,7 @@ function App() {
           </RequiredAuth>
           }
         />
+        <Route path="/about" element={<About/>}/>
         <Route path="*" element={<PageNotFound/>}/>
       </Routes>
       <Footer/>
