@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import HomeMain from './components/Home/HomeMain';
 import PageNotFound from './components/page-404/PageNotFound';
+import SignUp from './components/register/SignUp';
 import RequireAuth from './components/RequiredAuth/RequireAuth';
 import SignIn from './components/SignIn/SignIn';
 
@@ -28,6 +29,7 @@ function App() {
           }
         />
         <Route path="/about" element={<About />} />
+        <Route path='/register' element={<SignUp/>}/>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

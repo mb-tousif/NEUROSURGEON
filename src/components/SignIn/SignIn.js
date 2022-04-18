@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-// import { useSendEmailVerification } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
 import { auth } from "../../firebase.init";
 import logImage from "./image/logo.svg";
 
@@ -9,6 +9,7 @@ const SignIn = () => {
   const [password, setPassword] = useState('');
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+  const navigate = useNavigate();
   const getUserEmail = (e) => {
     setEmail(e.target.value)
   };
@@ -17,14 +18,14 @@ const SignIn = () => {
   };
   const getLogIn = (e) => {
     e.preventDefault();
-    console.log(email, password);
+    // console.log(email, password);
     signInWithEmailAndPassword(email, password);
+    navigate("/checkout");
   };
-  // const [sendEmailVerification, sending] =
-  //   useSendEmailVerification(auth);
-  // if (sending) {
-  //   return <p>Sending...</p>;
-  // }
+
+   if (loading) {
+     return <p>Loading...</p>;
+   }
 
   return (
     <div className="w-4/5 mx-auto p-4">
@@ -61,21 +62,12 @@ const SignIn = () => {
               Log In
             </button>
           </div>
-          {/* <div className="flex justify-center m-2">
-            <button
-              className="btn bg-lime-400 rounded-xl w-1/3 p-2 text-center"
-              onClick={async () => {
-                await sendEmailVerification();
-                alert("Sent email");
-              }}
-            >
-              Verify email
-            </button>
-          </div> */}
         </form>
         <p className="text-center text-gray-50 p-4">
           New to here?
-          <span className="btn">Please Sign Up</span>
+          <span className="hover:bg-lime-200 hover:text-black ml-2 p-2 rounded-2xl" onClick={() => navigate("/register")}>
+            Please Sign Up
+          </span>
         </p>
       </div>
     </div>
