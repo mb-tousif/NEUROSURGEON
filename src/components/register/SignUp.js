@@ -5,12 +5,13 @@ import { auth } from "../../firebase.init";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-
+import Loading from "../loading/Loading";
 const SignUp = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     createUserWithEmailAndPassword(auth, email, password);
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, googleUser, googleLoading, googleError] =
+      useSignInWithGoogle(auth, { sendEmailVerification:true});
     const navigate = useNavigate();
      const getUserEmail = (e) => {
        setEmail(e.target.value);
@@ -23,24 +24,10 @@ const SignUp = () => {
       //  console.log("from Submited",email, password);
      };
   
-
-    //  if (googleError) {
-    //    return (
-    //      <div>
-    //        <p>Error: {googleError.message}</p>
-    //      </div>
-    //    );
-    //  }
-    //  if (googleLoading) {
-    //    return <p>Loading...</p>;
-    //  }
-    //  if (googleUser) {
-    //    return (
-    //      <div>
-    //        <p>Signed In User: {googleUser.email}</p>
-    //      </div>
-    //    );
-    //  }
+     if (googleLoading) {
+       return <Loading/>
+     }
+     
   return (
     <div className="w-4/5 mx-auto p-4">
       <div className="bg-slate-500 w-4/5 mx-auto rounded-xl shadow-xl">
@@ -93,14 +80,7 @@ const SignUp = () => {
           </div>
         </div>
         <p className="text-center text-gray-50 m-2 p-4">
-          Already Registered?{" "}
-          <span
-            className="hover:bg-lime-200 hover:text-black ml-2 p-2 rounded-2xl"
-            onClick={() => navigate("/login")}
-          >
-            {" "}
-            Please Log In
-          </span>
+          Already Registered?<span className="hover:bg-lime-200 hover:text-black ml-2 p-2 rounded-2xl" onClick={() => navigate("/login")}>Please Log In</span>
         </p>
       </div>
     </div>
