@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import HomeMain from './components/Home/HomeMain';
 import PageNotFound from './components/page-404/PageNotFound';
-import RequiredAuth from './components/RequiredAuth/RequiredAuth';
+import RequireAuth from './components/RequiredAuth/RequireAuth';
 import SignIn from './components/SignIn/SignIn';
 
 function App() {
@@ -19,16 +19,18 @@ function App() {
         <Route path="/home" element={<HomeMain />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<SignIn />} />
-        <Route path='/checkout' element={
-          <RequiredAuth>
-            <CheckOut/>
-          </RequiredAuth>
+        <Route
+          path="/checkout"
+          element={
+            <RequireAuth>
+              <CheckOut />
+            </RequireAuth>
           }
         />
-        <Route path="/about" element={<About/>}/>
-        <Route path="*" element={<PageNotFound/>}/>
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
