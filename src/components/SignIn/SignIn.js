@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { useSendEmailVerification } from "react-firebase-hooks/auth";
+// import { useSendEmailVerification } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase.init";
 import logImage from "./image/logo.svg";
 
@@ -20,11 +20,11 @@ const SignIn = () => {
     console.log(email, password);
     signInWithEmailAndPassword(email, password);
   };
-  const [sendEmailVerification, sending] =
-    useSendEmailVerification(auth);
-  if (sending) {
-    return <p>Sending...</p>;
-  }
+  // const [sendEmailVerification, sending] =
+  //   useSendEmailVerification(auth);
+  // if (sending) {
+  //   return <p>Sending...</p>;
+  // }
 
   return (
     <div className="w-4/5 mx-auto p-4">
@@ -61,7 +61,7 @@ const SignIn = () => {
               Log In
             </button>
           </div>
-          <div className="flex justify-center m-2">
+          {/* <div className="flex justify-center m-2">
             <button
               className="btn bg-lime-400 rounded-xl w-1/3 p-2 text-center"
               onClick={async () => {
@@ -71,7 +71,7 @@ const SignIn = () => {
             >
               Verify email
             </button>
-          </div>
+          </div> */}
         </form>
         <p className="text-center text-gray-50 p-4">
           New to here?

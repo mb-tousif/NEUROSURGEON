@@ -8,7 +8,7 @@ const SignUp = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [createUserWithEmailAndPassword, user, loading, error] =
-      useCreateUserWithEmailAndPassword(auth);
+      useCreateUserWithEmailAndPassword(auth, {useSendEmailVerification:true});
     const [signInWithGoogle, googleUser, googleLoading, googleError] =
       useSignInWithGoogle(auth);
 
@@ -48,7 +48,6 @@ const SignUp = () => {
         <h1 className="md:text-3xl text-xl font-semibold text-center text-gray-50 m-2">
           Register Now &#9997;
         </h1>
-        <form onSubmit={getSignIn}>
           <div className="flex justify-center m-2 text-gray-50">
             <label htmlFor="userEmail">User Email</label>
             <input
@@ -70,11 +69,10 @@ const SignUp = () => {
             />
           </div>
           <div className="flex justify-center p-4">
-            <button className="bg-lime-200 hover:bg-lime-400 rounded-xl w-1/3 p-2 text-center">
+            <button onSubmit={getSignIn} className="bg-lime-200 hover:bg-lime-400 rounded-xl w-1/3 p-2 text-center">
               SIGN UP
             </button>
           </div>
-        </form>
         <div className="flex mx-auto mt-4 w-3/5">
           <div className="h-1 m-3 w-1/2 bg-orange-700"></div>
           <div className="">Or</div>

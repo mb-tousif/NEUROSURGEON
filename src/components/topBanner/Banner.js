@@ -17,7 +17,7 @@ const Banner = () => {
           <p>Trained in Functional Neurosurgery (Oxford, UK)</p>
           <p className="font-bold">Asst. Professor, Neurosurgery <br /> NINH Agargaon, Dhaka, Bangladesh.</p>
         </div>
-        <img className="rounded-xl mx-auto my-auto" src={Rumi} alt="Dr.Rumi"/>
+        <img className="rounded-xl md:p-3 rounded-3xl shadow-2xl mx-auto my-auto hover:scale-105" src={Rumi} alt="Dr.Rumi"/>
       </div>
     );
 };
