@@ -22,6 +22,7 @@ const SignUp = () => {
      const getSignIn = (e) => {
        e.preventDefault();
       //  console.log("from Submited",email, password);
+      navigate("/checkout");
      };
   
      if (googleLoading) {
