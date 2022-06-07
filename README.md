@@ -1,7 +1,7 @@
 # Site Name: NEUROSURGEON 
 
 ### This web-site maked for One of the Best Neurosurgeon of Bangladesh!
-## Clicked Here for the live Site- [Dr. Jalal Uddin Muhammad Rumi](https://ubiquitous-kringle-63d75a.netlify.app/).
+## Clicked Here for the live Site- [Dr. Jalal Uddin Muhammad Rumi](https://assignment-ten-8f5af.web.app/).
 ---
 
 ## website's different features, functionality and technologies given bellow 
