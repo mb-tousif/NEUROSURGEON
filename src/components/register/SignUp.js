@@ -10,7 +10,7 @@ const SignUp = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     createUserWithEmailAndPassword(auth, email, password);
-    const [signInWithGoogle, googleUser, googleLoading, googleError] =
+    const [signInWithGoogle, googleLoading] =
       useSignInWithGoogle(auth, { sendEmailVerification:true});
     const navigate = useNavigate();
      const getUserEmail = (e) => {
@@ -33,7 +33,7 @@ const SignUp = () => {
     <div className="w-4/5 mx-auto p-4">
       <div className="bg-slate-500 w-4/5 mx-auto rounded-xl shadow-xl">
         <img className="mx-auto m-2 p-2 w-1/3" src={logImage} alt="logo" />
-        <h1 className="md:text-3xl text-xl font-semibold text-center text-gray-50 m-2">
+        <h1 className="md:text-3xl text-xl font-semiBold text-center text-gray-50 m-2">
           Register Now &#9997;
         </h1>
         <div className="flex justify-center m-2 text-gray-50">

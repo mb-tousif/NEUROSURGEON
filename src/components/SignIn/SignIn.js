@@ -16,6 +16,10 @@ const SignIn = () => {
   const getUserPassword = (e) => {
       setPassword(e.target.value);
   };
+
+   if (loading) {
+     return <p>Loading...</p>;
+   }
   const getLogIn = (e) => {
     e.preventDefault();
     // console.log(email, password);
@@ -23,15 +27,11 @@ const SignIn = () => {
     navigate("/checkout");
   };
 
-   if (loading) {
-     return <p>Loading...</p>;
-   }
-
   return (
     <div className="w-4/5 mx-auto p-4">
       <div className="bg-stone-600 w-4/5 mx-auto rounded-xl shadow-2xl">
         <img className="mx-auto m-2 p-2 w-1/3" src={logImage} alt="logo" />
-        <h1 className="md:text-3xl text-xl font-semibold text-center text-gray-50 m-2">
+        <h1 className="md:text-3xl text-xl font-semiBold text-center text-gray-50 m-2">
           Sign In <span className="text-lime-600">&#9745;</span>
         </h1>
         <form onSubmit={getLogIn}>
